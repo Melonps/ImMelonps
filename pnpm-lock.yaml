@@ -46,7 +46,7 @@ importers:
         specifier: ^0.2.2
         version: 0.2.2
       wrangler:
-        specifier: ^4.4.0
+        specifier: ^4.5.1
         version: 4.5.1(@cloudflare/workers-types@4.20250327.0)
 
 packages:

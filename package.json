@@ -21,6 +21,6 @@
     "@cloudflare/workers-types": "^4.20250214.0",
     "vite": "^6.2.3",
     "vite-plugin-ssr-hot-reload": "^0.2.2",
-    "wrangler": "^4.4.0"
+    "wrangler": "^4.5.1"
   }
 }
