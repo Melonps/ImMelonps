@@ -21,10 +21,6 @@ $text-color: #343434;
 $brand-color: #1b8ecc;
 $border-color: #dedede;
 
-$background-color: darken($surface-color, 2%);
-$quote-text-color: darken($text-color, 5%);
-$quote-border-color: darken($brand-color, 5%);
-
 $radii: (
   "none": 0,
   "sm": 0.125rem,
@@ -162,7 +158,7 @@ a {
   display: block;
 }
 
-p{
+p {
   margin: 0;
   padding: 0;
 }

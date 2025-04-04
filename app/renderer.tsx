@@ -1,5 +1,4 @@
 import { jsxRenderer } from "hono/jsx-renderer";
-import "../public/static/style.scss";
 
 export const renderer = jsxRenderer(({ children }) => {
   return (
