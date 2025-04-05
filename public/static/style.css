@@ -81,7 +81,7 @@ h6 {
 }
 
 a {
-  color: #1b8ecc;
+  color: #c2303f;
   text-decoration: none;
   display: block;
 }
@@ -139,7 +139,7 @@ header {
 }
 .project-container .tags-list {
   gap: 0.5rem;
-  color: #1b8ecc;
+  color: #c2303f;
   display: flex;
   flex-direction: row;
   font-weight: 600;
