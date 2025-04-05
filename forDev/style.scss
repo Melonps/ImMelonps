@@ -1,5 +1,6 @@
 @use "sass:math";
 @use "sass:map";
+@use "sass:color";
 
 $base-font-size: 1rem;
 $h1-font-size: $base-font-size * 1.4;
@@ -18,7 +19,7 @@ $base-gap: 1rem;
 
 $surface-color: #ffffff;
 $text-color: #343434;
-$brand-color: #c2303f;
+$brand-color: #1b8ecc;
 $border-color: #dedede;
 
 $radii: (
@@ -53,7 +54,7 @@ $spaces: (
 }
 
 @mixin padding($size) {
-  padding: map.get($spaces, $size);
+  padding: map.get($spaces, $size) !important;
 }
 
 @mixin margin($size) {
@@ -93,6 +94,7 @@ html {
 
 body {
   margin: 0;
+  padding-top: 4rem;
   font-family: "Helvetica Neue", Helvetica, "Hiragino Sans", system-ui,
     -apple-system, "Hiragino Sans", "Yu Gothic UI", "Segoe UI", "Meiryo",
     sans-serif;
@@ -113,7 +115,6 @@ body {
   flex-direction: column;
   align-items: center;
   @include gap("2xl");
-  @include padding("2xl");
 
   @include media-query($on-palm) {
     width: 100vw;
@@ -211,6 +212,10 @@ header {
 
   :hover img {
     opacity: 1;
+  }
+
+  &:hover {
+    background-color: color.adjust($brand-color, $lightness: 50%, $space: hsl);
   }
 
   .tags-list {

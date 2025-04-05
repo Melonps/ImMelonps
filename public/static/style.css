@@ -20,6 +20,7 @@ html {
 
 body {
   margin: 0;
+  padding-top: 4rem;
   font-family: "Helvetica Neue", Helvetica, "Hiragino Sans", system-ui, -apple-system, "Hiragino Sans", "Yu Gothic UI", "Segoe UI", "Meiryo", sans-serif;
   font-size: 1rem;
   line-height: 1.7;
@@ -37,7 +38,6 @@ body {
   flex-direction: column;
   align-items: center;
   gap: 4rem;
-  padding: 4rem;
 }
 @media screen and (max-width: 580px) {
   body {
@@ -81,7 +81,7 @@ h6 {
 }
 
 a {
-  color: #c2303f;
+  color: #1b8ecc;
   text-decoration: none;
   display: block;
 }
@@ -114,7 +114,7 @@ header {
 }
 
 .project-container {
-  padding: 0.5rem;
+  padding: 0.5rem !important;
   border-radius: 0.75rem;
   gap: 1.5rem;
   color: #343434;
@@ -137,9 +137,12 @@ header {
 .project-container :hover img {
   opacity: 1;
 }
+.project-container:hover {
+  background-color: rgb(233.8051948052, 245.7532467532, 252.1948051948);
+}
 .project-container .tags-list {
   gap: 0.5rem;
-  color: #c2303f;
+  color: #1b8ecc;
   display: flex;
   flex-direction: row;
   font-weight: 600;
