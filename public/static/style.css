@@ -25,7 +25,7 @@ body {
   font-size: 1rem;
   line-height: 1.7;
   font-weight: 400;
-  width: 100%;
+  max-width: 100vw;
   color: #343434;
   background-color: #ffffff;
   -webkit-text-size-adjust: 100%;
@@ -37,14 +37,14 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
   gap: 4rem;
 }
 @media screen and (max-width: 580px) {
   body {
-    width: 100vw;
-    max-width: 100%;
     box-shadow: none;
-    padding: 10px;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 
@@ -99,22 +99,31 @@ ul {
 }
 
 main {
-  width: 580px;
+  max-width: 928px;
+  width: 100%;
 }
 
 header {
-  width: 580px;
+  max-width: 928px;
+  width: 100%;
+}
+
+.year-section {
+  padding-top: 1rem;
+}
+.year-section h3 {
+  padding-bottom: 0.4rem;
 }
 
 .project-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 0.4rem;
 }
 
 .project-container {
-  padding: 0.5rem !important;
+  padding: 1.5rem !important;
   border-radius: 0.75rem;
   gap: 1.5rem;
   color: #343434;
@@ -141,15 +150,11 @@ header {
   background-color: rgb(233.8051948052, 245.7532467532, 252.1948051948);
 }
 .project-container .tags-list {
-  gap: 0.5rem;
+  gap: 0.4rem;
   color: #1b8ecc;
   display: flex;
   flex-direction: row;
   font-weight: 600;
-}
-
-header {
-  width: 580px;
 }
 
 .header-wrapper {

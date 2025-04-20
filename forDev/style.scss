@@ -37,7 +37,7 @@ $radii: (
 $spaces: (
   "none": 0,
   "xs": 0.25rem,
-  "sm": 0.5rem,
+  "sm": 0.4rem,
   "md": 1rem,
   "base": 1.5rem,
   "lg": 2rem,
@@ -90,6 +90,7 @@ html {
     font-size: 15px;
     scroll-padding: calc($nav-height + 4rem);
   }
+  
 }
 
 body {
@@ -101,7 +102,7 @@ body {
   font-size: $base-font-size;
   line-height: $base-line-height;
   font-weight: 400;
-  width: 100%;
+  max-width: 100vw;
   color: $text-color;
   background-color: $surface-color;
   -webkit-text-size-adjust: 100%;
@@ -114,13 +115,13 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
   @include gap("2xl");
 
   @include media-query($on-palm) {
-    width: 100vw;
-    max-width: 100%;
     box-shadow: none;
-    padding: 10px;
+    padding-right: 2rem;
+    padding-left: 2rem;
   }
 }
 
@@ -172,22 +173,33 @@ ul {
 }
 
 main {
-  width: $on-palm;
+  // width: $on-palm;
+  max-width: $content-width;
+  width: 100%;
 }
 
 header {
-  width: $on-palm;
+  max-width: $content-width;
+  width: 100%;
+}
+
+.year-section{
+  padding-top: 1rem;
+
+  h3 {  
+    padding-bottom: 0.4rem;
+  }
 }
 
 .project-list {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
-  @include gap("base");
+  @include gap("sm");
 }
 
 .project-container {
-  @include padding("sm");
+  @include padding("base");
   @include rounded("xl");
   @include gap("base");
   color: $text-color;
@@ -227,9 +239,7 @@ header {
   }
 }
 
-header {
-  width: $on-palm;
-}
+
 
 .header-wrapper {
   display: flex;
