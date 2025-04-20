@@ -18,7 +18,7 @@ export default jsxRenderer(({ children, title }) => {
           <p>
             Osakaに住んでいるソフトウェアエンジニアです
             <br />
-            ソフトウェアや音楽を作って渡すのが好きです。
+            人の生活がちょっと豊かになるアプリ開発や、続きがみたくなるUI/UX開発、ワクワクさせるようなプロトタイプ開発・研究が好きです。
           </p>
         </header>
         <main>{children}</main>

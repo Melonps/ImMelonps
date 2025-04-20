@@ -3,6 +3,12 @@ export type Meta = {
   description: string;
   thumbnailPath: string;
   tags: string[];
+  year: number;
 };
 
-export type MiniMeta = Pick<Meta, "title" | "thumbnailPath">;
+export type PostEntry = {
+  id: string;
+  frontmatter: Meta;
+};
+
+export type PostsByYear = Record<number, PostEntry[]>;
