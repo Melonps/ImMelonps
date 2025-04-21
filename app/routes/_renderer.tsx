@@ -18,8 +18,26 @@ export default jsxRenderer(({ children, title }) => {
           <p>
             Osakaに住んでいるソフトウェアエンジニアです
             <br />
-            人の生活がちょっと豊かになるアプリ開発や、続きがみたくなるUI/UX開発、ワクワクさせるようなプロトタイプ開発・研究が好きです。
+            人々の生活がちょっと豊かになるアプリ開発や、続きがみたくなるUI/UX開発、ワクワクさせるようなプロトタイプ開発・研究が好きです。
           </p>
+          <div class="icon-list">
+            <a href="https://github.com/Melonps">
+              <img
+                class="project-icon"
+                src="/assets/icon/github.svg"
+                width="32"
+                height="32"
+              />
+            </a>
+            <a href="https://www.linkedin.com/in/banri-kakehi-121915351/">
+              <img
+                class="project-icon"
+                src="/assets/icon/linkedin.svg"
+                width="32"
+                height="32"
+              />
+            </a>
+          </div>
         </header>
         <main>{children}</main>
         <footer>
