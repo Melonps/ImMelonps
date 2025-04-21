@@ -46,7 +46,10 @@ export default function Top() {
                         <p>{post.frontmatter.description}</p>
                         <div class="tags-list">
                           {post.frontmatter.tags.map((tag) => (
-                            <p key={tag}> # {tag}</p>
+                            <p key={tag} class="tag-content">
+                              {" "}
+                              # {tag}
+                            </p>
                           ))}
                         </div>
                       </div>
