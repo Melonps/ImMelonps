@@ -1,11 +1,37 @@
 ---
 title: RE-Metor
-description: オンラインイベントの参加者の反応を自動集計してくれるwebアプリです。
+description: オンラインイベントの参加者の反応を自動集計してくれるWebアプリです
 thumbnailPath: /assets/re-meter.png
-tags: ["KDDI Developers Hacks優勝"]
+tags: ["KDDI Developers Hacks最優秀賞"]
 year: 2023
 ---
 
-## Hollo World
+# RE-meter
 
-This is a test
+![RE-meterのロゴ](https://i.gyazo.com/9dd29d8c067f7ef96fdc8decdead8647.png)
+
+## 概要
+
+RE-meterはオンラインイベントの参加者のReaction（リアクション）とEmotion（感情）を集計し、主催者にそれらのサマリを提供するwebアプリです。
+いまいち盛り上がりにくい、あるいは盛り上がっているかわからず不安になるイベントで、少しでも主催者と参加者の距離を縮めることができます。![RE-meterのロゴ](https://i.gyazo.com/9dd29d8c067f7ef96fdc8decdead8647.png)
+
+参加者側：
+1. 主催者が作成した部屋に参加します。
+2. カメラを起動しておくと、アプリが自動的にReactionとEmotionを定期的に分析します。
+
+主催者側：
+1. 参加者の参加を待ちます。
+2. イベント中に集計結果が表示されるので、それを確認します。
+
+Reactionの推定にはMediaPipeを利用し、Flask x Pythonのサーバーを構築しました。
+例えば、手を使った大きなポーズから、リアクションを推定します。
+![Reaction一覧](https://i.gyazo.com/thumb/1000/4e8dca2174e90e1568e60a61738d3926-png.jpg)
+
+## 発表
+- KDDI Developers Hacks（オンライン）
+
+## リンク
+- [KDDI 学生向けオンラインハッカソン 2023 SUMMER "イベントの新しい楽しみ方をデザインしよう"](https://techplay.jp/event/905493)
+- [発表スライド](https://docs.google.com/presentation/d/1z7DszrXR6g7GRRNQkVC-x7pBmTdnPGhdE67NKHXVNqY/edit?usp=sharing)
+- [メンバーが書いてくれた記事](https://qiita.com/tamagoage/items/5d9f7fefa0c701f67ca5)
+- [デモ動画](https://www.youtube.com/watch?v=kA30jxaOD34&ab_channel=KakeRskwa)
