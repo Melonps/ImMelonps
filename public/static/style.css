@@ -19,6 +19,7 @@ body {
   margin: 0;
   padding-top: 4rem;
   font-family: "Helvetica Neue", Helvetica, "Hiragino Sans", system-ui, -apple-system, "Hiragino Sans", "Yu Gothic UI", "Segoe UI", "Meiryo", sans-serif;
+  width: 580px;
   font-size: 1rem;
   line-height: 2;
   font-weight: 400;
@@ -93,6 +94,7 @@ pre {
   overflow-x: scroll;
   background-color: #343434;
   color: #ffffff;
+  font-size: 0.75rem;
 }
 
 p {
@@ -147,6 +149,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: left;
+  box-sizing: border-box;
 }
 .project-container .textual-wrapper {
   gap: 0;
@@ -159,6 +162,13 @@ header {
 .project-container .project-icon {
   border-radius: 0.375rem;
   width: 100px;
+  height: 100px;
+}
+@media screen and (max-width: 580px) {
+  .project-container .project-icon {
+    width: 80px;
+    height: 80px;
+  }
 }
 .project-container :hover img {
   opacity: 1;
@@ -172,9 +182,6 @@ header {
   display: flex;
   flex-direction: row;
   font-weight: 600;
-}
-.project-container .tags-list .tag-content {
-  white-space: nowrap;
 }
 
 .header-wrapper {

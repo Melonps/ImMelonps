@@ -96,6 +96,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, "Hiragino Sans", system-ui,
     -apple-system, "Hiragino Sans", "Yu Gothic UI", "Segoe UI", "Meiryo",
     sans-serif;
+  width: $on-palm;;
   font-size: $base-font-size;
   line-height: $base-line-height;
   font-weight: 400;
@@ -167,6 +168,7 @@ pre{
   overflow-x: scroll;
   background-color: #343434;
   color: #ffffff;
+  font-size: 0.75rem;
 }
 
 p {
@@ -223,6 +225,7 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: left;
+  box-sizing: border-box;
 
   .textual-wrapper {
     @include gap("none");
@@ -237,6 +240,11 @@ header {
   .project-icon {
     @include rounded("md");
     width: 100px;
+    height: 100px;
+    @include media-query($on-palm) {
+      width: 80px;
+    height: 80px;
+    }
   }
 
   :hover img {
@@ -254,9 +262,6 @@ header {
     flex-direction: row;
     font-weight: 600;
 
-    .tag-content {      	
-      white-space: nowrap;
-    }
   }
 }
 
