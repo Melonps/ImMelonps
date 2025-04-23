@@ -19,7 +19,7 @@ $base-gap: 1rem;
 
 $surface-color: #ffffff;
 $text-color: #343434;
-$brand-color: #1b8ecc;
+$brand-color: #1674a7;
 $border-color: #dedede;
 
 $radii: (
@@ -87,7 +87,6 @@ html {
     font-size: 15px;
     scroll-padding: calc($nav-height + 4rem);
   }
-  
 }
 
 body {
@@ -96,7 +95,7 @@ body {
   font-family: "Helvetica Neue", Helvetica, "Hiragino Sans", system-ui,
     -apple-system, "Hiragino Sans", "Yu Gothic UI", "Segoe UI", "Meiryo",
     sans-serif;
-  width: $on-palm;;
+
   font-size: $base-font-size;
   line-height: $base-line-height;
   font-weight: 400;
@@ -157,12 +156,12 @@ a {
   color: $brand-color;
   text-decoration: none;
   display: block;
-  &:hover{
-    color :color.adjust($brand-color, $lightness: 10%, $space: hsl);
+  &:hover {
+    color: color.adjust($brand-color, $lightness: 20%, $space: hsl);
   }
 }
 
-pre{
+pre {
   @include rounded("md");
   @include padding("base");
   overflow-x: scroll;
@@ -181,7 +180,7 @@ dd,
 ol,
 ul {
   padding-left: 1.5em;
-  white-space: normal; 
+  white-space: normal;
   margin: 0;
 }
 
@@ -201,10 +200,10 @@ header {
   width: 100%;
 }
 
-.year-section{
+.year-section {
   padding-top: 1rem;
 
-  h3 {  
+  h3 {
     padding-bottom: 0.4rem;
   }
 }
@@ -243,7 +242,7 @@ header {
     height: 100px;
     @include media-query($on-palm) {
       width: 80px;
-    height: 80px;
+      height: 80px;
     }
   }
 
@@ -252,7 +251,7 @@ header {
   }
 
   &:hover {
-    background-color: color.adjust($brand-color, $lightness: 50%, $space: hsl);
+    background-color: color.adjust($brand-color, $lightness: 60%, $space: hsl);
   }
 
   .tags-list {
@@ -261,11 +260,8 @@ header {
     display: flex;
     flex-direction: row;
     font-weight: 600;
-
   }
 }
-
-
 
 .header-wrapper {
   display: flex;

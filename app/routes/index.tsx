@@ -38,8 +38,8 @@ export default function Top() {
                       <img
                         class="project-icon"
                         src={post.frontmatter.thumbnailPath}
-                        width="100"
-                        height="100"
+                        // width="100"
+                        // height="100"
                       />
                       <div class="textual-wrapper">
                         <h4 class="project-title">{post.frontmatter.title}</h4>
